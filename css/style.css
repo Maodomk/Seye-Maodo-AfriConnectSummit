@@ -645,3 +645,462 @@ animation: fadeIn 1s ease;
 ```
 
 }
+/* =====================================================
+   COMMIT 3 - STYLES DE LA PAGE D'ACCUEIL
+   ===================================================== */
+
+
+/* =====================================================
+   1. INFORMATIONS DE L'EVENEMENT
+   ===================================================== */
+
+.event-info {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.event-info p {
+    margin-bottom: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.event-info i {
+    margin-right: 5px;
+    color: var(--accent-color);
+}
+
+
+/* =====================================================
+   2. BOUTONS DU HERO
+   ===================================================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--dark-color);
+}
+
+
+/* =====================================================
+   3. COMPTE A REBOURS
+   ===================================================== */
+
+.countdown {
+    display: flex;
+    gap: 15px;
+}
+
+.countdown-item {
+    width: 90px;
+    padding: 15px 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: var(--border-radius);
+
+    text-align: center;
+}
+
+.countdown-item span {
+    display: block;
+
+    font-family: var(--heading-font);
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.countdown-item small {
+    color: #cbd5e1;
+}
+
+
+/* =====================================================
+   4. SECTIONS GENERALES
+   ===================================================== */
+
+.section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 0;
+}
+
+.section-header {
+    max-width: 700px;
+
+    margin-bottom: 50px;
+}
+
+.section-label {
+    margin-bottom: 10px;
+
+    color: var(--primary-color);
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.section-header h2 {
+    font-size: 38px;
+}
+
+
+/* =====================================================
+   5. STATISTIQUES
+   CSS GRID
+   ===================================================== */
+
+.stats {
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.stat-card {
+    padding: 30px 20px;
+
+    background-color: var(--surface-color);
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--box-shadow);
+
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card i {
+    font-size: 30px;
+
+    color: var(--primary-color);
+}
+
+.stat-number {
+    display: block;
+
+    margin: 10px 0;
+
+    font-family: var(--heading-font);
+
+    font-size: 40px;
+    font-weight: bold;
+
+    color: var(--secondary-color);
+}
+
+.stat-card p {
+    color: var(--gray-color);
+}
+
+
+/* =====================================================
+   6. POURQUOI PARTICIPER
+   CSS GRID
+   ===================================================== */
+
+.why-section {
+    background-color: var(--background-color);
+}
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.why-card {
+    padding: 30px;
+
+    background-color: var(--surface-color);
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--box-shadow);
+
+    transition: var(--transition);
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background-color: var(--primary-color);
+
+    border-radius: var(--border-radius);
+
+    color: white;
+
+    font-size: 24px;
+}
+
+.why-card h3 {
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: var(--gray-color);
+}
+
+
+/* =====================================================
+   7. INTERVENANTS VEDETTES
+   CSS GRID
+   ===================================================== */
+
+.speakers-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.speaker-card {
+    overflow: hidden;
+
+    background-color: var(--surface-color);
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--box-shadow);
+
+    transition: var(--transition);
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.speaker-info {
+    padding: 20px;
+}
+
+.speaker-info h3 {
+    margin-bottom: 5px;
+}
+
+.speaker-info p {
+    margin-bottom: 5px;
+
+    color: var(--gray-color);
+}
+
+.speaker-info span {
+    color: var(--primary-color);
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-button {
+    margin-top: 40px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   8. SPONSORS
+   ===================================================== */
+
+.sponsors-section {
+    text-align: center;
+}
+
+.sponsors-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.sponsor-card {
+    width: 250px;
+
+    padding: 40px 20px;
+
+    background-color: var(--surface-color);
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--box-shadow);
+
+    transition: var(--transition);
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+}
+
+.sponsor-card i {
+    font-size: 35px;
+}
+
+.sponsor-card h3 {
+    margin: 15px 0 5px;
+}
+
+.sponsor-card p {
+    color: var(--gray-color);
+}
+
+
+/* Sponsor Or */
+
+.sponsor-gold {
+    min-height: 220px;
+
+    border-top: 5px solid #d4af37;
+}
+
+.sponsor-gold i {
+    color: #d4af37;
+}
+
+
+/* Sponsor Argent */
+
+.sponsor-silver {
+    min-height: 190px;
+
+    border-top: 5px solid #9ca3af;
+}
+
+.sponsor-silver i {
+    color: #9ca3af;
+}
+
+
+/* Sponsor Bronze */
+
+.sponsor-bronze {
+    min-height: 160px;
+
+    border-top: 5px solid #cd7f32;
+}
+
+.sponsor-bronze i {
+    color: #cd7f32;
+}
+
+
+/* =====================================================
+   9. RESPONSIVE TABLETTE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .event-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sponsors-container {
+        flex-direction: column;
+    }
+
+    .sponsor-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+
+
+/* =====================================================
+   10. RESPONSIVE MOBILE
+   ===================================================== */
+
+@media (max-width: 375px) {
+
+    .section-header h2 {
+        font-size: 30px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .countdown-item {
+        width: 70px;
+    }
+
+    .countdown-item span {
+        font-size: 22px;
+    }
+
+}
